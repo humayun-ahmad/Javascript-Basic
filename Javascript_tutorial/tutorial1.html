@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tutorial 1</title>
+</head>
+	<body>
+		<h1 id="header">Hello</h1>
+		<!-- <button onclick="Red()">Red</button> -->
+
+		<input type="text" id="inp"/>
+		<button onclick="Pressed()">Click</button>
+
+		<script type="text/javascript">
+			
+
+			function Pressed() {
+				var text = document.getElementById('inp').value
+				if(text == "red"){
+					document.getElementById('header').innerHTML = "Red";
+					document.getElementById('header').style.color = "red";
+				}
+
+			
+				else{
+					document.getElementById('header').innerHTML = "Green";
+					document.getElementById('header').style.color = "green";
+
+				}
+			
+			}
+
+		</script>
+	</body>
+</html>
